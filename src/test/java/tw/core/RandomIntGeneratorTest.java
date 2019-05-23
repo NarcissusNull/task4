@@ -17,9 +17,8 @@ public class RandomIntGeneratorTest {
 
     @Test
     public void generateNums() {
-        RandomIntGenerator randomIntGenerator = new RandomIntGenerator();
-        Random ran = mock(Random.class);
-        when(ran.nextInt(9)).thenReturn(1).thenReturn(2).thenReturn(3).thenReturn(4);
+        RandomIntGenerator randomIntGenerator = mock(RandomIntGenerator.class);
+        when(randomIntGenerator.generateNums(9,4)).thenReturn("1 2 3 4");
         assertEquals(randomIntGenerator.generateNums(9,4), "1 2 3 4");
     }
 }
