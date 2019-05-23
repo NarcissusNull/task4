@@ -28,7 +28,7 @@ public class GameControllerTest {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
         gameController.beginGame();
-        assertEquals(out.toString(), "------Guess Number Game, You have 6 chances to guess!  ------\r\n");
+        assertEquals(out.toString(), "------Guess Number Game, You have 6 chances to guess!  ------\n");
     }
 
 }
